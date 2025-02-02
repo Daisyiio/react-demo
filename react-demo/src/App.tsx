@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 
 import Mustache from "@/components/Mustache";
 import { UseState,UseState2 } from "@/components/UseState";

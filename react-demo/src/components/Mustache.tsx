@@ -1,3 +1,4 @@
+import { Divider } from 'antd';
 function Mustache() {
   // 1.插值语句 jsx tsx {} 字符串 数字  数组{原始类型}  元素  三元表达式  API调用
   // 2.插值语句如何支持对象  需要序列化  JSON.stringify()
@@ -17,6 +18,8 @@ function Mustache() {
   };
   return (
     <>
+    <Divider />
+      <h1>插值语法</h1>
       <div
         style={style}
         className={`${cls} aa bb`}
@@ -30,9 +33,9 @@ function Mustache() {
           return <div key={index}>{item}</div>;
         })}
       </div>
+      <Divider />
     </>
   );
-  }
+}
 
-
-  export default Mustache
+export default Mustache;
