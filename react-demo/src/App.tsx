@@ -1,7 +1,7 @@
 import "./App.scss";
 
 import Mustache from "@/components/Mustache";
-import { UseState,UseState2 } from "@/components/UseState";
+import { UseState,UseState2,UseState3 } from "@/components/UseState";
 function App() {
   return (
     <>
@@ -9,6 +9,7 @@ function App() {
         <Mustache />
         <UseState></UseState>
         <UseState2> </UseState2>
+        <UseState3></UseState3> 
       </div>
     </>
   );
