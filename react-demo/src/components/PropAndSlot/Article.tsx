@@ -20,8 +20,10 @@ type articleDetailType = {
   };
 };
 function Article({ title, articleDetail }: ArticleProps) {
+  const handleClickButton = function () {};
   return (
     <>
+      <button onClick={handleClickButton}></button>
       <h1>{title}</h1>
       <Detail articleDetail={articleDetail}></Detail>
     </>
