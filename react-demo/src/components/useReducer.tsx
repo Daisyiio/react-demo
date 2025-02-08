@@ -67,7 +67,7 @@ const reducer2 = (
   //   id: number;
   //   newName?: string;
   // }
-  action:Action
+  action: Action
 ) => {
   switch (action.type) {
     case "add":
