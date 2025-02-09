@@ -1,4 +1,6 @@
 import { Article } from "./Article";
+import { Divider } from "antd";
+
 function PropAndSlot() {
   const articleData = [
     {
@@ -25,9 +27,13 @@ function PropAndSlot() {
   ];
   return (
     <>
-    {articleData.map(item=>{
-        return <Article title={item.title}  articleDetail={item.details}></Article>
-    })}
+      <Divider />
+      {articleData.map((item) => {
+        return (
+          <Article title={item.title} articleDetail={item.details}></Article>
+        );
+      })}
+      <Divider />
     </>
   );
 }

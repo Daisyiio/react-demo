@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { Divider } from "antd";
 
 type ListProps = {
   title: string;
@@ -19,6 +20,7 @@ function List({ children, title, footer = <div>默认底部</div> }: ListProps) 
 function Slot() {
   return (
     <>
+      <Divider />
       <List title="列表1" footer={<p>这是底部内容1</p>}>
         <li>Item 1</li>
         <li>Item 2</li>
@@ -37,6 +39,8 @@ function Slot() {
         <li>Item 3</li>
         <li>Item 4</li>
       </List>
+
+      <Divider />
     </>
   );
 }
