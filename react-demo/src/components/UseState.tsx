@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button, Divider } from "antd";
 //关于原始类型的操作
 function UseState() {
@@ -7,6 +7,9 @@ function UseState() {
   let handleClickBool = () => {
     setBool(!bool);
   };
+  useEffect(() => {
+    console.log("useEffect");
+  }, [str]);
   return (
     <>
       <Divider />
@@ -80,6 +83,9 @@ function UseState3() {
     });
     console.log(index); //0 同步
   };
+  useEffect(() => {
+    console.log("useEffect");
+  }, [index]);
   return (
     <>
       <Divider />

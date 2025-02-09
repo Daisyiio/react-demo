@@ -28,9 +28,13 @@ function PropAndSlot() {
   return (
     <>
       <Divider />
-      {articleData.map((item) => {
+      {articleData.map((item, index) => {
         return (
-          <Article title={item.title} articleDetail={item.details}></Article>
+          <Article
+            title={item.title}
+            articleDetail={item.details}
+            key={index}
+          ></Article>
         );
       })}
       <Divider />
