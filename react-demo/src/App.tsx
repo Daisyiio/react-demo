@@ -9,6 +9,8 @@ import { PropAndSlot } from "@/components/PropAndSlot/Prop";
 import { Slot } from "@/components/PropAndSlot/Slot";
 import { PageContext } from "@/components/PropAndSlot/Context";
 import { UseRefDemo, UseRefDemo2 } from "@/components//useRef";
+import Game from '@/components/SquarePlay'
+
 function App() {
   return (
     <>
@@ -26,6 +28,7 @@ function App() {
         <UseRefDemo></UseRefDemo>
         <Divider></Divider>
         <UseRefDemo2 />
+        <Game></Game>    
       </div>
     </>
   );
